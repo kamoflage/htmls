@@ -1,17 +1,44 @@
+var ul = document.getElementById("information");	
 
-{/* <ol id="details">
-<li>Molope</li>
-            <li>Kamogelo Koketso Katlego</li>
-            <li>RSA</li>
-            <li>0102100841083</li>
-            <li>10 February 2001</li>
-            <li>RSA</li>
-            <li>Female</li>
-            <li>Citizen</li>
-</ol> */}
+ul.onclick = function(event) {		
+  var information = event.target;
+  var selection = document.getElementById("selection");
+  switch (information.id) {
+    case "surname":
+      selection.innerHTML = "Molope";
+  }
+  switch (information.id) {
+    case "name":
+      selection.innerHTML = "Kamogelo Koketso Katlego";
+  }
 
-onclick = function(event) {		
-  var information = event.target.innerHTML;
-  var selection = document.getElementById("selection");			
-  selection.innerHTML = information;	
+  switch (information.id) {
+    case "nation":
+      selection.innerHTML = "RSA";
+  }
+
+  switch (information.id) {
+    case "id":
+      selection.innerHTML = "0102100841083";
+  }
+
+  switch (information.id) {
+    case "dob":
+      selection.innerHTML = "10 February 2001";
+  }
+
+  switch (information.id) {
+    case "cob":
+      selection.innerHTML = "RSA";
+  }
+ 
+  switch (information.id) {
+    case "sex":
+      selection.innerHTML = "Female";
+  }
+
+  switch (information.id) {
+    case "stat":
+      selection.innerHTML = "Citizen";
+  }
 }  
